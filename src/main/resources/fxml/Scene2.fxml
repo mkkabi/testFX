@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400" prefWidth="320" xmlns:fx="http://javafx.com/fxml" fx:controller="com.mycompany.mavenproject1.FXMLController">
+    <children>
+        
+        <TitledPane animated="true" expanded="false" layoutX="0" layoutY="0" prefWidth="60.0" text="Menu">
+            <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="252" prefWidth="60.0" >  
+            <Button layoutX="0" layoutY="0" mnemonicParsing="false" onAction="#saveClasses" fx:id="imageButton1">
+              <graphic>
+                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" fx:id="image1">
+                  <image>
+                    <Image url="http://vignette2.wikia.nocookie.net/payday/images/2/21/Pat-gear-grinder.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+
+            <Button layoutX="0" layoutY="63" mnemonicParsing="false" onAction="#restoreClasses" fx:id="imageButton2">
+              <graphic>
+                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" fx:id="image2">
+                  <image>
+                    <Image url="http://savvatsekmes.com/wp-content/uploads/2014/12/Polygon-Portrait-4-50x50.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+
+            <Button layoutX="0" layoutY="126" mnemonicParsing="false" onAction="#createNewClass" fx:id="imageButton3">
+              <graphic>
+                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" fx:id="image3">
+                  <image>
+                    <Image url="http://asiajin.com/blog/wp-content/uploads/2010/02/sunao-ni-narenakute-main-actors-50x50.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+
+            <Button layoutX="0" layoutY="189" mnemonicParsing="false" onAction="#showSomeLines" fx:id="imageButton4">
+              <graphic>
+                <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true" fx:id="image4">
+                  <image>
+                    <Image url="http://ashkasalon.com/wp-content/uploads/2016/01/Screen-Shot-2016-01-04-at-4.58.13-PM-50x50.png" />
+                  </image>
+                </ImageView>
+              </graphic>
+            </Button>
+              </AnchorPane>
+            </content>
+        </TitledPane>
+        
+        <AnchorPane layoutX="110" layoutY="0" fx:id="linesPane" >
+            
+        </AnchorPane>
+    
+        <!--<Button layoutX="226" layoutY="90" text="Click Me!" onAction="#handleButtonAction2" fx:id="button" />-->
+        <!--<Label layoutX="126" layoutY="120" minHeight="16" minWidth="69" fx:id="label" />-->
+        <!--<TextArea layoutX="350" layoutY="5" minHeight="35" minWidth="120" maxWidth="150"  fx:id="textForClass" />-->
+            
+        
+    </children>
+</AnchorPane>

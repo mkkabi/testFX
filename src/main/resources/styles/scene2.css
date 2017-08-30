@@ -1,0 +1,12 @@
+.titled-pane > * > * > AnchorPane {
+    -fx-padding: 0em ;
+}
+
+#imageButton3, #imageButton1, #imageButton2, #imageButton4{
+    -fx-padding: 0em;
+    -fx-opacity: .6;
+}
+
+#imageButton3:hover, #imageButton1:hover, #imageButton2:hover, #imageButton4:hover{
+    -fx-opacity: 1;
+}
