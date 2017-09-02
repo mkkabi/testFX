@@ -31,8 +31,10 @@ import javafx.stage.Stage;
 
 public class FXMLController extends Application implements Initializable  {
 	Stage primaryStage;
+	Parent root2;
 	public static ObjectOutputStream saver;
 	public static ObjectInputStream loader;
+	Scene scene2;
     
     @FXML
     private Label label;
@@ -44,6 +46,13 @@ public class FXMLController extends Application implements Initializable  {
 		private AnchorPane linesPane;
 		@FXML
 		private TextArea textForClass;
+		
+		@FXML
+    private void newScene(ActionEvent event) {
+        System.out.println("New scene button clicked");
+        NewScene scene3 = new NewScene(root2);
+    }
+
     
     @FXML
     private void handleButtonAction2(ActionEvent event) {
@@ -118,10 +127,10 @@ public class FXMLController extends Application implements Initializable  {
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		Parent root2 = FXMLLoader.load(getClass().getResource("/fxml/Scene2.fxml"));
+		root2 = FXMLLoader.load(getClass().getResource("/fxml/Scene2.fxml"));
         
 //			primaryStage.getScene().getWindow();
-        Scene scene2 = new Scene(root2);
+        scene2 = new Scene(root2);
         scene2.getStylesheets().add("/styles/scene2.css");
         
 				
