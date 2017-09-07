@@ -102,14 +102,13 @@ public class FXMLController extends Application implements Initializable  {
 		}
 		
 		@FXML
-		private void saveClasses() throws IOException, ClassNotFoundException, Exception{
-			saver = new ObjectOutputStream(new FileOutputStream(new File("saves.txt")));
-			for (NewClass obj : NewClass.objects){
-			saver.writeObject(obj);
-				System.out.println("save method called");
+		private void saveClasses() throws IOException, ClassNotFoundException{
+			try(ObjectOutputStream saver = new ObjectOutputStream(new FileOutputStream(new File("saves.txt")))){
+				for (NewClass obj : NewClass.objects){
+					saver.writeObject(obj);
+					System.out.println("save method called");
+				}
 			}
-			saver.close();
-
 		}
 		
 		@FXML
